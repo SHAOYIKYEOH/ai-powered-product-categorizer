@@ -12,6 +12,14 @@ Problems caused by the lack of categorization:
 - **Blind Spot:** Zero visibility into which product lines are actually driving profit.
 - **Trend Lag:** Missing the start of a new consumer trend because "hidden" categories aren't being tracked.
 
+The raw data can be downloaded [here].
+
+The SQL queries used to clean, organize and prepare the data for this analysis are available [here].
+
+The SQL queries used to send prompts to the AI model are available [here].
+
+The results can be found [here].
+
 # Data Architecture
 
 RAW data structure seen consists of following attributes: Date, Doc_No, Item_Code, Item_Description, Company_Name, Area, Qty, UOM, Unit_Price, DISC(Discount), Subtotal. With a total row count of 84,074 records.
