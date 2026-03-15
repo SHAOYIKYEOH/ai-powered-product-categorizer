@@ -16,7 +16,7 @@ The raw data can be downloaded [here].
 
 The SQL queries used to clean, organize and prepare the data for this analysis are available [here].
 
-The SQL queries used to send prompts to the AI model are available [here].
+The SQL queries used to send prompts to the AI model are available [here](ai-prompts.sql).
 
 The results can be found [here].
 
