@@ -57,7 +57,6 @@ call_llm AS (
   SELECT
     item_code,
     item_description,
-    -- ✅ Correct path confirmed from debug output
     REPLACE(
       REPLACE(
         JSON_EXTRACT_SCALAR(ml_generate_text_result, '$.candidates[0].content.parts[0].text'),
