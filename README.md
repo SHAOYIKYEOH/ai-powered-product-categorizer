@@ -14,7 +14,7 @@ Problems caused by the lack of categorization:
 
 The raw data can be downloaded [here](data/raw_data.csv).
 
-The SQL queries used to clean, organize and prepare the data for this analysis are available [here].
+The SQL queries used to clean, organize and prepare the data for this analysis are available [here](distinct_products.sql).
 
 The SQL queries used to send prompts to the AI model are available [here](ai-prompts.sql).
 
