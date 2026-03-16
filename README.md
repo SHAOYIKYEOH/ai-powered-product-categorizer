@@ -12,7 +12,7 @@ Problems caused by the lack of categorization:
 - **Blind Spot:** Zero visibility into which product lines are actually driving profit.
 - **Trend Lag:** Missing the start of a new consumer trend because "hidden" categories aren't being tracked.
 
-The raw data can be downloaded [here].
+The raw data can be downloaded [here](data/raw_data.csv).
 
 The SQL queries used to clean, organize and prepare the data for this analysis are available [here].
 
