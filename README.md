@@ -18,7 +18,7 @@ The SQL queries used to clean, organize and prepare the data for this analysis a
 
 The SQL queries used to send prompts to the AI model are available [here](ai-prompts.sql).
 
-The results can be found [here].
+The results can be found [here](data/categorized_products.csv).
 
 # Data Architecture
 
