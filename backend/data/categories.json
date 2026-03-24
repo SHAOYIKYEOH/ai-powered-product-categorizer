@@ -1,0 +1,58 @@
+{
+  "main_categories": [
+    {
+      "name": "Office Equipment",
+      "sub_categories": [
+        {
+          "name": "Printers",
+          "description": "Printing devices"
+        },
+        {
+          "name": "Scanners",
+          "description": "Document scanners"
+        },
+        {
+          "name": "Time Recorders",
+          "description": "Time attendance systems"
+        }
+      ],
+      "description": "Machines and devices for office use"
+    },
+    {
+      "name": "Furniture",
+      "sub_categories": [
+        {
+          "name": "Chairs",
+          "description": "Office seating"
+        },
+        {
+          "name": "Desks",
+          "description": "Work tables and desks"
+        },
+        {
+          "name": "Shelving",
+          "description": "Storage and shelving systems"
+        }
+      ],
+      "description": "Office and industrial furniture"
+    },
+    {
+      "name": "IT & Retail",
+      "sub_categories": [
+        {
+          "name": "POS Systems",
+          "description": "Point of sale systems"
+        },
+        {
+          "name": "Barcode Scanners",
+          "description": "Hand-held and fixed barcode readers"
+        },
+        {
+          "name": "Monitors",
+          "description": "Computer displays and monitors"
+        }
+      ],
+      "description": "IT and retail solutions"
+    }
+  ]
+}

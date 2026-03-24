@@ -1,0 +1,83 @@
+{
+  "Office Equipment::Printers": [
+    {
+      "product_description": "HP LaserJet Pro M404n Printer",
+      "main_category": "Office Equipment",
+      "sub_category": "Printers",
+      "reasoning": "Laser printer device for office use",
+      "confidence": 1.0
+    }
+  ],
+  "Office Equipment::Scanners": [
+    {
+      "product_description": "Canon DR-C250 Document Scanner",
+      "main_category": "Office Equipment",
+      "sub_category": "Scanners",
+      "reasoning": "Professional document scanner",
+      "confidence": 1.0
+    }
+  ],
+  "Office Equipment::Time Recorders": [
+    {
+      "product_description": "AMANO PR600 Watchman Clock Time Recorder",
+      "main_category": "Office Equipment",
+      "sub_category": "Time Recorders",
+      "reasoning": "Time attendance and guard tour system",
+      "confidence": 1.0
+    }
+  ],
+  "Furniture::Chairs": [
+    {
+      "product_description": "Steelcase Leap Office Chair",
+      "main_category": "Furniture",
+      "sub_category": "Chairs",
+      "reasoning": "Ergonomic office seating furniture",
+      "confidence": 1.0
+    }
+  ],
+  "Furniture::Desks": [
+    {
+      "product_description": "Herman Miller Eames Desk",
+      "main_category": "Furniture",
+      "sub_category": "Desks",
+      "reasoning": "Executive work desk and table",
+      "confidence": 1.0
+    }
+  ],
+  "Furniture::Shelving": [
+    {
+      "product_description": "Metal Storage Cabinet with Shelves",
+      "main_category": "Furniture",
+      "sub_category": "Shelving",
+      "reasoning": "Storage shelving and cabinet system",
+      "confidence": 1.0
+    }
+  ],
+  "IT & Retail::POS Systems": [
+    {
+      "product_description": "PAX S920 Mobile POS Terminal",
+      "main_category": "IT & Retail",
+      "sub_category": "POS Systems",
+      "reasoning": "Mobile point of sale terminal for retail",
+      "confidence": 1.0
+    }
+  ],
+  "IT & Retail::Barcode Scanners": [
+    {
+      "product_description": "Datalogic Gryphon GD4400 Barcode Scanner",
+      "main_category": "IT & Retail",
+      "sub_category": "Barcode Scanners",
+      "reasoning": "Hand-held barcode scanning device",
+      "confidence": 1.0
+    }
+  ],
+  "IT & Retail::Monitors": [
+    {
+      "product_description": "Dell UltraSharp U2724D 27-inch Monitor",
+      "main_category": "IT & Retail",
+      "sub_category": "Monitors",
+      "reasoning": "Computer display and monitoring device",
+      "confidence": 1.0
+    }
+  ]
+}
