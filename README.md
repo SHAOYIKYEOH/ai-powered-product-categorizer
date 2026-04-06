@@ -18,7 +18,7 @@ This repo uses a **restaurant menu** as the sample dataset to demonstrate the pi
 | APP002 | Tom Yum Seafood Soup | Appetizers | Soups | 98% |
 | SIDE007 | BBQ Sauce | Sides | Sauces & Dips | 100% |
 
-Sample data: [`data/sample_menu.csv`](data/sample_menu.csv)
+Sample data: [`data/input/sample_menu.csv`](data/input/sample_menu.csv)
 
 ---
 
@@ -132,7 +132,7 @@ curl -X POST http://localhost:8000/api/categories/config \
 **2. Upload and classify:**
 ```bash
 curl -X POST http://localhost:8000/api/upload \
-  -F "file=@data/sample_menu.csv" \
+  -F "file=@data/input/sample_menu.csv" \
   -F "dataset_id=your_dataset" \
   -F "table_id=menu_items" \
   -F "code_column=Item Code" \
@@ -150,8 +150,10 @@ curl "http://localhost:8000/api/results?dataset_id=your_dataset"
 
 ```
 ├── data/
-│   ├── sample_menu.csv          # Sample restaurant menu dataset
-│   └── categories.json          # Active category configuration
+│   ├── input/
+│   │   └── sample_menu.csv      # Sample restaurant menu dataset
+│   └── output/
+│       └── categorized_menu.csv # Classified output
 ├── backend/
 │   ├── main.py                  # FastAPI entry point
 │   ├── config.py                # Environment settings
