@@ -25,7 +25,7 @@ Sample data: [`data/input/sample_menu.csv`](data/input/sample_menu.csv)
 ## How It Works
 
 1. **Configure your categories** — POST your category taxonomy (main + sub categories) to the API
-2. **Upload your CSV** — specify which columns are the item code and item description
+2. **Upload your CSV** — specify which columns are the **item code and item description**
 3. **Pipeline runs automatically:**
    - Loads CSV into BigQuery
    - Deduplicates products (one description per item code)
