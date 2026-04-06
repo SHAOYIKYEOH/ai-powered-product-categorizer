@@ -39,7 +39,8 @@ class BigQueryClient:
                 source_format=bigquery.SourceFormat.CSV,
                 skip_leading_rows=1,
                 autodetect=True,
-                write_disposition="WRITE_TRUNCATE"
+                write_disposition="WRITE_TRUNCATE",
+                max_bad_records=100
             )
             
             with open(csv_file_path, "rb") as source_file:

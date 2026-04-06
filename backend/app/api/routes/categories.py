@@ -31,11 +31,11 @@ async def set_categories(request: UploadCategoryRequest):
       "categories": {
         "main_categories": [
           {
-            "name": "Office Equipment",
-            "description": "Machines and devices",
+            "name": "Main Course",
+            "description": "Primary dishes and entrees",
             "sub_categories": [
-              {"name": "Printers", "description": "Document printers"},
-              {"name": "Scanners"}
+              {"name": "Grilled & Roasted", "description": "Grilled meats and BBQ"},
+              {"name": "Seafood", "description": "Fish, prawns and seafood dishes"}
             ]
           }
         ]
@@ -60,17 +60,12 @@ async def get_categories():
     Returns:
         Current category configuration
     """
-    try:
-        categories = CategoryManager.get_categories()
-        
-        if not categories:
-            raise HTTPException(status_code=404, detail="No categories configured yet")
-        
-        return categories
-    
-    except Exception as e:
-        logger.error(f"Error retrieving categories: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
+    categories = CategoryManager.get_categories()
+
+    if not categories:
+        raise HTTPException(status_code=404, detail="No categories configured yet")
+
+    return categories
 
 
 @router.get("/categories/list")
@@ -84,8 +79,8 @@ async def get_category_names():
     Example:
     ```json
     {
-      "main_categories": ["Office Equipment", "Furniture"],
-      "sub_categories": ["Printers", "Scanners", "Chairs"]
+      "main_categories": ["Appetizers", "Main Course", "Desserts", "Beverages", "Sides"],
+      "sub_categories": ["Soups", "Salads", "Finger Food", "Grilled & Roasted", "Seafood"]
     }
     ```
     """
@@ -114,16 +109,16 @@ async def add_examples(request: UploadExamplesRequest):
     {
       "examples": [
         {
-          "product_description": "HP LaserJet Pro Printer",
-          "main_category": "Office Equipment",
-          "sub_category": "Printers",
-          "reasoning": "It's a printer device"
+          "product_description": "Grilled Ribeye Steak 300g",
+          "main_category": "Main Course",
+          "sub_category": "Grilled & Roasted",
+          "reasoning": "A grilled meat main course dish"
         },
         {
-          "product_description": "Samsung Flat Panel Monitor",
-          "main_category": "IT Equipment",
-          "sub_category": "Monitors",
-          "confidence": 0.99
+          "product_description": "Cappuccino",
+          "main_category": "Beverages",
+          "sub_category": "Hot Drinks",
+          "confidence": 1.0
         }
       ]
     }
@@ -157,11 +152,11 @@ async def get_examples(
     Example:
     ```json
     {
-      "Office Equipment::Printers": [
+      "Main Course::Seafood": [
         {
-          "product_description": "HP LaserJet Pro",
-          "main_category": "Office Equipment",
-          "sub_category": "Printers"
+          "product_description": "Grilled Salmon Fillet",
+          "main_category": "Main Course",
+          "sub_category": "Seafood"
         }
       ]
     }
