@@ -1,58 +1,98 @@
 {
   "main_categories": [
     {
-      "name": "Office Equipment",
+      "name": "Appetizers",
       "sub_categories": [
         {
-          "name": "Printers",
-          "description": "Printing devices"
+          "name": "Soups",
+          "description": "Hot and cold soups"
         },
         {
-          "name": "Scanners",
-          "description": "Document scanners"
+          "name": "Salads",
+          "description": "Fresh salads and greens"
         },
         {
-          "name": "Time Recorders",
-          "description": "Time attendance systems"
+          "name": "Finger Food",
+          "description": "Small bites, wings, fries, nachos"
         }
       ],
-      "description": "Machines and devices for office use"
+      "description": "Starters and small bites served before the main course"
     },
     {
-      "name": "Furniture",
+      "name": "Main Course",
       "sub_categories": [
         {
-          "name": "Chairs",
-          "description": "Office seating"
+          "name": "Pasta & Rice",
+          "description": "Pasta, risotto, noodle dishes"
         },
         {
-          "name": "Desks",
-          "description": "Work tables and desks"
+          "name": "Grilled & Roasted",
+          "description": "Grilled meats, roasted chicken, BBQ"
         },
         {
-          "name": "Shelving",
-          "description": "Storage and shelving systems"
+          "name": "Seafood",
+          "description": "Fish, prawns, squid and other seafood"
+        },
+        {
+          "name": "Vegetarian",
+          "description": "Plant-based and vegetarian mains"
         }
       ],
-      "description": "Office and industrial furniture"
+      "description": "Primary dishes and entrees"
     },
     {
-      "name": "IT & Retail",
+      "name": "Desserts",
       "sub_categories": [
         {
-          "name": "POS Systems",
-          "description": "Point of sale systems"
+          "name": "Cakes & Pastries",
+          "description": "Sliced cakes, tarts, croissants"
         },
         {
-          "name": "Barcode Scanners",
-          "description": "Hand-held and fixed barcode readers"
+          "name": "Ice Cream & Frozen",
+          "description": "Ice cream, sorbet, gelato"
         },
         {
-          "name": "Monitors",
-          "description": "Computer displays and monitors"
+          "name": "Puddings & Others",
+          "description": "Puddings, crepes, waffles"
         }
       ],
-      "description": "IT and retail solutions"
+      "description": "Sweet dishes served after the main course"
+    },
+    {
+      "name": "Beverages",
+      "sub_categories": [
+        {
+          "name": "Hot Drinks",
+          "description": "Coffee, tea, hot chocolate"
+        },
+        {
+          "name": "Cold Drinks",
+          "description": "Juices, sodas, iced drinks"
+        },
+        {
+          "name": "Alcoholic",
+          "description": "Beer, wine, cocktails, spirits"
+        }
+      ],
+      "description": "Drinks both hot and cold"
+    },
+    {
+      "name": "Sides",
+      "sub_categories": [
+        {
+          "name": "Bread & Rolls",
+          "description": "Garlic bread, dinner rolls, flatbreads"
+        },
+        {
+          "name": "Vegetables",
+          "description": "Steamed, roasted or stir-fried vegetables"
+        },
+        {
+          "name": "Sauces & Dips",
+          "description": "Condiments, dipping sauces, dressings"
+        }
+      ],
+      "description": "Side dishes to accompany mains"
     }
   ]
 }

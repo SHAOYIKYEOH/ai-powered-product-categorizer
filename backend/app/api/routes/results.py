@@ -8,8 +8,6 @@ from app.services.bigquery_client import BigQueryClient
 router = APIRouter()
 logger = logging.getLogger(__name__)
 
-bq_client = BigQueryClient()
-
 GET_RESULTS_QUERY = """
 SELECT
   item_code,
@@ -24,6 +22,13 @@ LIMIT {limit}
 """
 
 
+def _get_bq_client() -> BigQueryClient:
+    try:
+        return BigQueryClient()
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=f"Failed to connect to BigQuery: {str(e)}")
+
+
 @router.get("/results")
 async def get_results(
     dataset_id: str,
@@ -31,23 +36,27 @@ async def get_results(
 ):
     """
     Retrieve categorized products
-    
+
     Args:
         dataset_id: BigQuery dataset ID
         limit: Maximum number of results to return
-    
+
     Returns:
         List of categorized products with confidence scores
     """
+    if limit < 1 or limit > 10000:
+        raise HTTPException(status_code=400, detail="limit must be between 1 and 10000")
+
     try:
+        bq_client = _get_bq_client()
         project_id = bq_client.client.project
-        
+
         query = GET_RESULTS_QUERY.format(
             project_id=project_id,
             dataset_id=dataset_id,
-            limit=limit
+            limit=int(limit)
         )
-        
+
         results = bq_client.execute_query(query, dataset_id=dataset_id)
         
         return {
@@ -85,10 +94,11 @@ async def get_results_summary(dataset_id: str):
         GROUP BY main_category, sub_category
         ORDER BY count DESC
         """
-        
+
+        bq_client = _get_bq_client()
         project_id = bq_client.client.project
         query = summary_query.format(project_id=project_id, dataset_id=dataset_id)
-        
+
         results = bq_client.execute_query(query, dataset_id=dataset_id)
         
         total_count = sum(r['count'] for r in results)

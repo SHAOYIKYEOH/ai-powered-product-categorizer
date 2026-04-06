@@ -1,0 +1,64 @@
+Item Code,Item Name,Price
+APP001,Creamy Mushroom Soup,12.90
+APP002,Tom Yum Seafood Soup,14.90
+APP003,Caesar Salad with Croutons,16.90
+APP004,Greek Salad,15.90
+APP005,Buffalo Chicken Wings (6pcs),18.90
+APP006,Crispy Calamari Rings,17.90
+APP007,Loaded Nachos with Cheese,16.90
+APP008,Garlic Bread with Cheese,8.90
+APP009,Spring Rolls (4pcs),12.90
+APP010,Prawn Cocktail,19.90
+MAIN001,Spaghetti Carbonara,24.90
+MAIN002,Penne Arrabiata,22.90
+MAIN003,Seafood Linguine,28.90
+MAIN004,Mushroom Risotto,23.90
+MAIN005,Grilled Ribeye Steak 300g,68.90
+MAIN006,BBQ Baby Back Ribs Half Rack,48.90
+MAIN007,Roasted Half Chicken,38.90
+MAIN008,Grilled Salmon Fillet,42.90
+MAIN009,Pan-Seared Sea Bass,44.90
+MAIN010,Garlic Butter Prawn,36.90
+MAIN011,Fish & Chips,29.90
+MAIN012,Vegetable Stir Fry with Tofu,21.90
+MAIN013,Mushroom and Spinach Lasagna,25.90
+MAIN014,Grilled Lamb Chops 2pcs,58.90
+MAIN015,Chicken Teriyaki Rice Bowl,26.90
+MAIN016,Nasi Lemak Special,18.90
+MAIN017,Char Kuey Teow,16.90
+MAIN018,Beef Rendang with Rice,22.90
+DES001,Chocolate Lava Cake,14.90
+DES002,New York Cheesecake Slice,13.90
+DES003,Tiramisu,14.90
+DES004,Vanilla Ice Cream 2 Scoops,9.90
+DES005,Mango Sorbet,10.90
+DES006,Waffle with Ice Cream,15.90
+DES007,Crepe Suzette,14.90
+DES008,Banana Foster Pudding,13.90
+DES009,Strawberry Tart,12.90
+DES010,Gelato of the Day,11.90
+BEV001,Espresso,8.90
+BEV002,Cappuccino,11.90
+BEV003,Latte,12.90
+BEV004,English Breakfast Tea,9.90
+BEV005,Fresh Orange Juice,10.90
+BEV006,Mango Lassi,11.90
+BEV007,Iced Lemon Tea,8.90
+BEV008,Sparkling Water 500ml,6.90
+BEV009,Coca-Cola,6.90
+BEV010,Carlsberg Beer 330ml,14.90
+BEV011,House Red Wine Glass,18.90
+BEV012,Mojito Cocktail,22.90
+BEV013,Margarita,24.90
+BEV014,Hot Chocolate,12.90
+BEV015,Iced Matcha Latte,13.90
+SIDE001,Steamed Jasmine Rice,4.90
+SIDE002,Garlic Dinner Rolls,7.90
+SIDE003,Grilled Asparagus,10.90
+SIDE004,Honey Glazed Carrots,9.90
+SIDE005,Truffle Fries,14.90
+SIDE006,Coleslaw,7.90
+SIDE007,BBQ Sauce,3.90
+SIDE008,Hollandaise Sauce,4.90
+SIDE009,Naan Bread,5.90
+SIDE010,Roasted Baby Potatoes,10.90
