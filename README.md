@@ -1,8 +1,20 @@
 # AI-Powered Product Categorizer
 
+## What This Project Does
+
 An AI-powered REST API pipeline that automatically classifies products into a two-tier category hierarchy using **Google Gemini** via **BigQuery ML**.
 
-Upload any CSV of products, define your own categories, and the system does the rest — returning a main category, sub-category, confidence score, and reasoning for each item.
+Upload any CSV — including raw sales transaction data — define your own categories, and the system does the rest: returning a main category, sub-category, confidence score, and reasoning for each unique product.
+
+---
+
+## The Problem
+
+Small and mid-size businesses often have a significant amount of sales and demographic data, but their **digital transformation** is still limited. Much of the data is incomplete or unstructured. For example, many products are not categorized. As a result, it is difficult to analyze business performance.
+
+One of the most common pain points is **uncategorized product data**. Businesses may have years of sales transaction records, but no way to quickly understand which categories drive the most revenue.
+
+This project solves that. Upload your raw sales transaction CSV (messy data is fine), and the pipeline classifies it using AI — returning a clean, categorized product list.
 
 ---
 
@@ -22,10 +34,28 @@ Sample data: [`data/input/sample_menu.csv`](data/input/sample_menu.csv)
 
 ---
 
+## How We Handle Messy Data
+
+Real business data is rarely clean. A raw sales transaction CSV might have 50,000 rows where the same product appears hundreds of times with slightly different descriptions, or a single item code was reused inconsistently across years.
+
+The pipeline handles this automatically before any AI classification happens:
+
+**1. Flexible column mapping** — your CSV headers don't need to follow any naming convention. You have to tell the API which column is the product code and which is the description.
+
+**2. Deduplication** — the pipeline groups all rows by product code and counts how many distinct descriptions exist per code:
+- If a code has **1–2 description variations** (e.g. `"Ribeye Steak"` and `"Ribeye Steak 300g"`), it picks the best one and sends it to the AI
+- If a code has **3+ wildly different descriptions** (a sign the code was reused for unrelated products), it flags it honestly — the AI will return Uncategorized with a low confidence score
+
+**3. Normalization** — codes and descriptions are trimmed and lowercased before deduplication, so `"REPAIR NOTE"`, `"Repair Note"`, and `"  repair note  "` are treated as the same description
+
+The result: thousands of rows of raw sales data → a few hundred unique products → each one classified by AI.
+
+---
+
 ## How It Works
 
 1. **Configure your categories** — POST your category taxonomy (main + sub categories) to the API
-2. **Upload your CSV** — specify which columns are the item code and item description
+2. **Upload your CSV** — specify which columns are the item code and item description (any header names work)
 3. **Pipeline runs automatically:**
    - Loads CSV into BigQuery
    - Deduplicates products (one description per item code)
