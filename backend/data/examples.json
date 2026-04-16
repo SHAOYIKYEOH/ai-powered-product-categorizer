@@ -1,0 +1,56 @@
+{
+  "Appetizers::Soups": [
+    {"product_description": "Creamy Mushroom Soup", "main_category": "Appetizers", "sub_category": "Soups", "reasoning": "A warm creamy soup served as a starter.", "confidence": 1.0},
+    {"product_description": "Tom Yum Seafood Soup", "main_category": "Appetizers", "sub_category": "Soups", "reasoning": "A spicy Thai soup served as a starter.", "confidence": 1.0}
+  ],
+  "Appetizers::Salads": [
+    {"product_description": "Caesar Salad with Croutons", "main_category": "Appetizers", "sub_category": "Salads", "reasoning": "A classic salad served as a starter.", "confidence": 1.0},
+    {"product_description": "Greek Salad", "main_category": "Appetizers", "sub_category": "Salads", "reasoning": "A fresh salad with olives and feta.", "confidence": 1.0}
+  ],
+  "Appetizers::Finger Food": [
+    {"product_description": "Buffalo Chicken Wings (6pcs)", "main_category": "Appetizers", "sub_category": "Finger Food", "reasoning": "Small bite finger food served as a starter.", "confidence": 1.0},
+    {"product_description": "Loaded Nachos with Cheese", "main_category": "Appetizers", "sub_category": "Finger Food", "reasoning": "Shareable finger food snack.", "confidence": 1.0}
+  ],
+  "Main Course::Grilled & Roasted": [
+    {"product_description": "Grilled Ribeye Steak 300g", "main_category": "Main Course", "sub_category": "Grilled & Roasted", "reasoning": "A grilled meat main course.", "confidence": 1.0},
+    {"product_description": "BBQ Baby Back Ribs Half Rack", "main_category": "Main Course", "sub_category": "Grilled & Roasted", "reasoning": "BBQ grilled ribs as a main dish.", "confidence": 1.0}
+  ],
+  "Main Course::Seafood": [
+    {"product_description": "Grilled Salmon Fillet", "main_category": "Main Course", "sub_category": "Seafood", "reasoning": "A grilled fish main course.", "confidence": 1.0},
+    {"product_description": "Garlic Butter Prawn", "main_category": "Main Course", "sub_category": "Seafood", "reasoning": "Prawn dish served as a main course.", "confidence": 1.0}
+  ],
+  "Main Course::Pasta & Rice": [
+    {"product_description": "Spaghetti Carbonara", "main_category": "Main Course", "sub_category": "Pasta & Rice", "reasoning": "A classic Italian pasta main course.", "confidence": 1.0},
+    {"product_description": "Mushroom Risotto", "main_category": "Main Course", "sub_category": "Pasta & Rice", "reasoning": "A creamy rice-based main course.", "confidence": 1.0}
+  ],
+  "Desserts::Cakes & Pastries": [
+    {"product_description": "New York Cheesecake Slice", "main_category": "Desserts", "sub_category": "Cakes & Pastries", "reasoning": "A slice of cake served as dessert.", "confidence": 1.0}
+  ],
+  "Desserts::Ice Cream & Frozen": [
+    {"product_description": "Vanilla Ice Cream 2 Scoops", "main_category": "Desserts", "sub_category": "Ice Cream & Frozen", "reasoning": "Ice cream served as dessert.", "confidence": 1.0}
+  ],
+  "Desserts::Puddings & Others": [
+    {"product_description": "Chocolate Lava Cake", "main_category": "Desserts", "sub_category": "Puddings & Others", "reasoning": "A warm molten dessert.", "confidence": 1.0}
+  ],
+  "Beverages::Hot Drinks": [
+    {"product_description": "Cappuccino", "main_category": "Beverages", "sub_category": "Hot Drinks", "reasoning": "A hot espresso-based coffee drink.", "confidence": 1.0},
+    {"product_description": "English Breakfast Tea", "main_category": "Beverages", "sub_category": "Hot Drinks", "reasoning": "A hot tea beverage.", "confidence": 1.0}
+  ],
+  "Beverages::Cold Drinks": [
+    {"product_description": "Fresh Orange Juice", "main_category": "Beverages", "sub_category": "Cold Drinks", "reasoning": "A cold freshly squeezed juice.", "confidence": 1.0},
+    {"product_description": "Iced Lemon Tea", "main_category": "Beverages", "sub_category": "Cold Drinks", "reasoning": "A cold iced tea beverage.", "confidence": 1.0}
+  ],
+  "Beverages::Alcoholic": [
+    {"product_description": "Carlsberg Beer 330ml", "main_category": "Beverages", "sub_category": "Alcoholic", "reasoning": "An alcoholic beer beverage.", "confidence": 1.0},
+    {"product_description": "Mojito Cocktail", "main_category": "Beverages", "sub_category": "Alcoholic", "reasoning": "An alcoholic cocktail.", "confidence": 1.0}
+  ],
+  "Sides::Bread & Rolls": [
+    {"product_description": "Garlic Dinner Rolls", "main_category": "Sides", "sub_category": "Bread & Rolls", "reasoning": "Bread rolls served as a side dish.", "confidence": 1.0}
+  ],
+  "Sides::Vegetables": [
+    {"product_description": "Grilled Asparagus", "main_category": "Sides", "sub_category": "Vegetables", "reasoning": "Grilled vegetables as a side dish.", "confidence": 1.0}
+  ],
+  "Sides::Sauces & Dips": [
+    {"product_description": "BBQ Sauce", "main_category": "Sides", "sub_category": "Sauces & Dips", "reasoning": "A dipping sauce served on the side.", "confidence": 1.0}
+  ]
+}
